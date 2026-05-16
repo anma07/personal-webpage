@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/png" href="../images/animal-shelter.png">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body data-theme="">
+    <div class="home-header">
+        <nav class="headlr" id="header-left">
+            <img src="../images/animal-shelter.png" class="header-image" alt="description"></image>
+        </nav>
+        <nav class="headlr" id="header-right">
+            <a class = "headh" href = "index.html">Home</a>
+            <a class = "headh" href = "projects.html">Projects</a>
+            <a class = "headh" href = "about.html">About</a>
+            <a class = "headh" href = "contact.html">Contact</a>
+            <button id="theme-toggle">🌙</button>
+        </nav>
+    </div>
+    <div class="contact-container reveal">
+    <form id="contactForm">
+        <label for="fullname">Full name:</label>
+        <input type="text" id="fullname" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="successMessage" style="display: none;">
+        <p>Form submitted successfully!</p>
+        <button onclick="location.reload()">Go Back</button>
+    </div>
+
+    </div>
+    <div class="contact-container reveal2">
+        <div class="social-links">
+            <a href="mailto:avani.mandlik@research.iiit.ac.in"><img src="/images/mail.png" alt="Email"></a>
+            <a href="https://github.com/anma07"><img src="/images/github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/avani-mandlik-62b682224/"><img src="/images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/avani_m06/"><img src="/images/instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+    <script src="contact.js"></script>
+    <script src="index.js"></script>
+</body>

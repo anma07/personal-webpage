@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Projects</title>
+    <link rel="icon" type="image/png" href="../images/animal-shelter.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body data-theme="">
+    <div class="home-header">
+        <nav class="headlr" id="header-left">
+            <img src="../images/animal-shelter.png" class="header-image" alt="description"></image>
+        </nav>
+        <nav class="headlr" id="header-right">
+            <a class = "headh" href = "index.html">Home</a>
+            <a class = "headh" href = "projects.html">Projects</a>
+            <a class = "headh" href = "about.html">About</a>
+            <a class = "headh" href = "contact.html">Contact</a>
+            <button id="theme-toggle">🌙</button>
+        </nav>
+    </div>
+    <div id="filters" class="reveal">
+        <label class="check"><input type="checkbox" value="js" class="tag-filter"> JavaScript</label>
+        <label class="check"><input type="checkbox" value="css" class="tag-filter"> CSS</label>
+        <label class="check"><input type="checkbox" value="node" class="tag-filter"> Node.js</label>
+        <label class="check"><input type="checkbox" value="c" class="tag-filter"> C</label>
+    </div>
+    <div class="main-container">
+        <div class="reveal">
+        <div class="card" data-tags="js,node,css" id="Project1">
+            <h4 class="project-title">Wordle</h4>
+            <p>Mimicks the Wordle game, can give multiple words, give proper response and store the stats over multiple runs. I built it as I was curious on how simple backend works and wanted to implement it. I would like to add leaderboard and sync across multiple devices.</p>
+            <p>Used: HTML, CSS, Javascript, Node.js</p>
+            <a href="https://github.com/anma07/Wordle-web-"><img src="/images/github.png" alt="GitHub"></a>
+        </div>
+        </div>
+        <div class="reveal">
+        <div class="card" data-tags="c" id="Project1">
+            <h4 class="project-title">Twixt</h4>
+            <p>Twixt is a board game where you have two players compete to make a path from one end to other without getting obstructed by another player. This was built as a part of CS0.101 Course Project. I would like to make it multiplayer across devices as well as add a single player option.</p>
+            <p>Used: C</p>
+            <a href="https://github.com/anma07/Twixt"><img src="/images/github.png" alt="GitHub"></a>
+        </div>
+        </div>
+        <div class="reveal">
+        <div class="card" data-tags="c" id="Project1">
+            <h4 class="project-title">C-Unplugged</h4>
+            <p>C-Unplugged mimicks a music player, where you can make and edit playlists, queues. Also play songs in any specfic order. This was built as a part of CS0.101 Assignment. I would like to make an actual UI for this project (currently CLI version).</p>
+            <p>Used: C</p>
+            <a href="https://github.com/anma07/C-Unplugged"><img src="/images/github.png" alt="GitHub"></a>
+        </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="projects.js"></script>
+</body>
